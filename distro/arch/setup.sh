@@ -1,10 +1,26 @@
-#/bin/zsh
+#!/bin/bash
 
-# Install / bootstrap script
-ARCH_APPS = [
+#
+# Packages
+#
 
-]
+# Not using an SELinux setup with Arch.
+# Suggest using AppArmor + Firejail for others.
 
-AUR_APPS = [
+ARCH_APPS = (
+  base-devel
+  git
+)
 
-]
+AUR_APPS = (
+  brave  # disable safe browsing (sends URLS for checking against single API)
+  firefox
+
+)
+
+# if [[ $HOSTTYPE == "server" ]]; then STANDARD_PKGS+=(tmux) else AUR_PKGS+=(spotify) fi
+
+#
+# Install Scripts
+#
+
