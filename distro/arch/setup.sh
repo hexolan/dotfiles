@@ -4,8 +4,9 @@
 # Packages
 #
 
-# Not using an SELinux setup with Arch.
+# Install with/without SELinux setup with Arch?
 # Suggest using AppArmor + Firejail for others.
+# harderned kernel setups?
 
 ARCH_APPS = (
   base-devel
