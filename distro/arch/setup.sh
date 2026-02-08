@@ -31,9 +31,20 @@ AUR_APPS = (
   # insomnia
 )
 
+# Security Apps
+ARCH_SECURITY_APPS = (
+  apparmor
+  firejail
+)
+
+ARCH_SECURITY_AUR_APPS = (
+  # NOTE: These apparmor profiles aren't *ALWAYS* the best on Arch without modification
+  # apparmor.d
+)
+
 # TODO: customise install level within script
 # select custom 'packages' / 'apps' (minimal dots, core apps/cfgs only, etc)
-HYPR_APPS = (
+ARCH_HYPR_APPS = (
   hyprland
   hyprlock
   hypridle
@@ -42,7 +53,7 @@ HYPR_APPS = (
   waybar
 )
 
-HYPR_AUR_APPS = (
+ARCH_HYPR_AUR_APPS = (
   awww-git
 )
 
@@ -52,3 +63,10 @@ HYPR_AUR_APPS = (
 # Install Scripts
 #
 
+# TODO
+
+#
+# Enable Services (systemd)
+#
+
+# todo: also support for non systemd setups / alternatives
