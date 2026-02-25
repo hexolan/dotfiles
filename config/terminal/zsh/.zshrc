@@ -23,7 +23,7 @@ plugins=(
   emoji
   docker
   encode64
-  web-search
+  # fzf
 )
 
 setopt HIST_FIND_NO_DUPS

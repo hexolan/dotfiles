@@ -5,6 +5,8 @@
 #
 
 # Install with/without SELinux setup with Arch?
+# `audit` setup not included within here (more install-specific cfg)
+
 # Suggest using AppArmor + Firejail for others.
 # harderned kernel setups?
 
@@ -12,9 +14,11 @@ ARCH_APPS = (
   base-devel
   git
 
+  zsh
+  zoxide
+
   kitty
   fastfetch # ofc, ofc
-  zoxide
 
   neovim
   lazygit
@@ -24,7 +28,7 @@ ARCH_APPS = (
 )
 
 AUR_APPS = (
-  brave  # disable safe browsing; privacy (sends URLS, hashes - but known DB, for checking against single API)
+  brave  # disable safe browsing; security + privacy concerns (sends URLS, hashes - but known DB, for checking against single API)
   firefox
 
   # bruno
@@ -48,13 +52,14 @@ ARCH_HYPR_APPS = (
   hyprland
   hyprlock
   hypridle
-  rofi
-  swaync
+
   waybar
+  swaync
+  rofi
 )
 
 ARCH_HYPR_AUR_APPS = (
-  awww-git
+  awww-git # wallpaper mgmt (can substitute)
 )
 
 # if [[ $HOSTTYPE == "server" ]]; then STANDARD_PKGS+=(tmux) else AUR_PKGS+=(spotify) fi
